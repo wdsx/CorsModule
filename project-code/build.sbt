@@ -2,7 +2,9 @@ organization := "co.wds"
 
 name := "CorsModule"
 
-version := "1.0-SNAPSHOT"
+version := "1.1-SNAPSHOT"
+
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 resolvers ++= Seq(
   "WDS Artifactory Releases" at "http://artifactory.wdstechnology.com/artifactory/libs-release-local",
@@ -15,5 +17,3 @@ publishTo := Some("WDS Xi Snapshots" at "s3://xi-repository/snapshot")
 
 libraryDependencies ++= Seq(
 )     
-
-play.Project.playScalaSettings

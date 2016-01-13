@@ -12,6 +12,7 @@ class CorsFilter extends EssentialFilter {
           result.withHeaders(
             "X-Clacks-Overhead" -> "GNU Terry Pratchett"
           )
+        }
       } else {
         next(requestHeader).map { result =>
           result.withHeaders(

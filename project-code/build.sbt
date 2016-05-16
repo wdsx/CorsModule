@@ -2,7 +2,9 @@ organization := "co.wds"
 
 name := "CorsModule"
 
-version := "2.2.x-SNAPSHOT"
+version := "2.3.0"
+
+scalaVersion := "2.11.1"
 
 resolvers ++= Seq(
   "WDS Artifactory Releases" at "http://artifactory.wdstechnology.com/artifactory/libs-release-local",
